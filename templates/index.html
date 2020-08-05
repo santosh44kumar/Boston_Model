@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index_html.css">
+</head>
+<body>
+<div class="textstyle1">
+  <h1 id="heading_e4bf9ac">
+    <span class="textstyle1">
+      <span class="textstyle2">BOSTON Model</span>
+      </span>
+    </h1>
+  <span class="textstyle3"><br/><br/></span>
+  <form  action="{{ url_for('predict')}}"
+enctype="application/x-www-form-urlencoded"
+method="POST" id="form_382cbccc">
+    <div id="form_382cbccc_padding" >
+      <div class="textstyle1">
+<input type="number" value="" title="" name="TextEdit3" step="1"  id="edit_276db422" required="required"  >
+        <span class="textstyle3">CRIM<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit4" step="1"  id="edit_4c46cf44" required="required" >
+        <span class="textstyle3">ZN<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_5d6e8fc5" required="required" >
+        <span class="textstyle3">CHAS<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_7912be8c" required="required" >
+        <span class="textstyle3">NOX<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_552b321a" required="required" >
+        <span class="textstyle3">RM<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_3af796a8" required="required" >
+        <span class="textstyle3">DIS<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_6771e4d8" required="required" >
+        <span class="textstyle3">PTRATIO<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_7e87c8e1" required="required" >
+        <span class="textstyle3">B<br/><br/></span>
+<input type="number" value="" title="" name="TextEdit1" step="1"  id="edit_633d4dc3" required="required" >
+        <span class="textstyle3">LSTAT<br/><br/><br/></span>
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+   
+        </div>
+      <div style="clear:both"></div>
+      </div>
+    </form>
+  <span class="textstyle3"><br/></span>
+  </div>
+</body>
+</html>
